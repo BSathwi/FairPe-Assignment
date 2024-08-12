@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .banner-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .small-image {
+      position: absolute;
+      width: 40%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .container21 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2vw;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .container21 .percentage {
+      font-size: 3vw;
+    }
+
+    @media (max-width: 768px) {
+      .container21 {
+        font-size: 4vw;
+      }
+
+      .container21 .percentage {
+        font-size: 5vw;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container21 {
+        font-size: 6vw;
+      }
+
+      .container21 .percentage {
+        font-size: 8vw;
+      }
+    }
+
+    .website-banner {
+      display: flex;
+      position: absolute;
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 0.5vw 1vw;
+    }
+
+    .website-banner.top {
+      top: 2vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .website-banner.left {
+      top: 50%;
+      left: 2vw;
+      transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .website-banner.right {
+      top: 50%;
+      right: 2vw;
+      transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .website-banner.bottom {
+      bottom: 2vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .imaging_1 {
+      font-size: 20px;
+    }
+
+    @media all and (max-width: 763px) {
+      .imaging_1 {
+        font-size: 14px;
+      }
+    }
+
+    @media all and (max-width: 576px) {
+      .imaging_1 {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner-container">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5ec25fa4ad5403e94e9fabaa6ef415a7734560d3b2bedf2ad94260676407f325?placeholderIfAbsent=true&apiKey=c0d8678779fe41478f126bbde5f10d2d" alt="Background Image" class="banner-image">
+    
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cb4c9ddeb2dfe765865705498a90e3feff0cd072973c1e26d5eeb22da9395fc?placeholderIfAbsent=true&apiKey=c0d8678779fe41478f126bbde5f10d2d" alt="Small Image" class="small-image">
+    
+    <div class="container21">
+      <span class="imaging_1">FLASH SALE</span>
+      <span class="imaging_1">99% <span>off</span></span>
+    </div>
+
+    <div class="website-banner top">samplewebsite.com</div>
+    <div class="website-banner left">samplewebsite.com</div>
+    <div class="website-banner right">samplewebsite.com</div>
+    <div class="website-banner bottom">samplewebsite.com</div>
+  </div>
+</body>
+</html>
